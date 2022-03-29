@@ -1,0 +1,44 @@
+#test-functional-rating {
+  margin: 0 auto;
+  width: 700px;
+  min-height: 700px;
+  background-color: #100e1d;
+  border-top: 1px solid white;
+  box-sizing: border-box;
+}
+
+#test-functional-rating h1 {
+  color: white;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 64px;
+}
+
+#test-functional-rating ul {
+  padding: 0;
+  list-style: none;
+}
+
+#test-functional-rating li {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+}
+
+#test-functional-rating li:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+#test-functional-rating li:first-child div:not(:nth-child(2)) {
+  color: gold;
+}
+
+#test-functional-rating li:nth-child(2) div:not(:nth-child(2)) {
+  color: silver;
+}
+
+#test-functional-rating li:nth-child(3) div:not(:nth-child(2)) {
+  color: sandybrown;
+}

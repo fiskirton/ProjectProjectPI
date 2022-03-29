@@ -1,0 +1,57 @@
+#test-functional-question {
+    padding: 50px;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#test-functional-question h1{
+    color: white;
+    font-size: 72px;
+    margin: 0;
+    text-align: center;
+}
+
+.test-functional-question-answers {
+    margin-top: 48px;
+    display: grid;
+    row-gap: 48px;
+    column-gap: 360px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.test-functional-question-answer {
+    border-radius: 8px;
+    font-size: 50%;
+    box-sizing: border-box;
+    padding: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 150px;
+    border: 1px solid white;
+    color: white;
+}
+
+[class = "test-functional-question-answer"]:hover {
+    background-color: #01b075;
+}
+
+.test-functional-question-number {
+    align-self: end;
+    color: white;
+    font-size: 36px;
+}
+
+.test-functional-question-answer__right {
+    background-color: #01b075;
+}
+
+.test-functional-question-answer__wrong {
+    background-color: red;
+}

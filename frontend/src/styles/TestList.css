@@ -1,0 +1,22 @@
+#test-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  grid-gap: 50px;
+}
+
+.nickname{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+  height: 80px;
+  width: 480px;
+  background-color: #202125;
+  border: none;
+  outline: 1px solid white;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+  padding: 16px;
+  font-size: 36px;
+}

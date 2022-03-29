@@ -1,0 +1,10 @@
+#test-functional {
+    position: relative;
+    margin: 0 auto;
+    width: 1400px;
+    height: 700px;
+    background-color: #202125;
+    border-radius: 12px;
+    font-size: 72px;
+    box-sizing: border-box;
+}
