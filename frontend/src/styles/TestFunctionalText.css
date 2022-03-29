@@ -1,0 +1,11 @@
+#test-functional-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+}
+#test-functional-text p {
+    text-align: center;
+    margin: 0;
+}
