@@ -24,6 +24,7 @@ export interface ITestQuestionAnswer {
 }
 
 export interface ITestQuestion {
+    id: string;
     questionNumber: number;
     totalQuestions: number;
     text: string,

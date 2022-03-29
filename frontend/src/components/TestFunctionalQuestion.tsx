@@ -32,13 +32,13 @@ export default function TestFunctionalQuestion({
 
   const updateCurrentQuestion = () => {
     updateClicked(false);
-    repository.getTestCurrentQuestion(id).then((q) => updateQuestion(q));
+    repository.getTestCurrentQuestion(id, nick).then((q) => updateQuestion(q));
   };
 
   const onAnswer = async (answerId: string) => {
     if (clicked) return;
     assertQuestion(question);
-    const rightAnswer = await repository.sendTestAnswer(id, answerId, nick);
+    const rightAnswer = await repository.sendTestAnswer(question.id, answerId, nick);
 
     const answers = question.answers;
     answers.forEach((el) => (el.status = "not_checked"));

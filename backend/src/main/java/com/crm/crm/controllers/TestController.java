@@ -117,6 +117,8 @@ public class TestController {
         }
         map.addValue("question", question);
         map.addValue("answer", getAllAnswers);
+        map.addValue("totalQuestions", questionNumber);
+
         return map.getValues();
     }
 }

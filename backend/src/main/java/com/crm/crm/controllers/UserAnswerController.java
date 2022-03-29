@@ -32,7 +32,8 @@ public class UserAnswerController {
     public Object sendAnswerForQuestion(@RequestParam(value = "answer_id") Long answerId,
                                         @RequestParam(value = "question_id") Long questionId,
                                         @RequestParam(value = "user_nick_name") String userNickName) {
-        if (!testRepository.existsById(answerId) || !questionRepository.existsById(questionId)) {
+
+        if (!answerRepository.existsById(answerId) || !questionRepository.existsById(questionId)) {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         } else {
             UserAnswer userAnswer = new UserAnswer(answerId, questionId, userNickName);
