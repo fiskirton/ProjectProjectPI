@@ -1,12 +1,11 @@
-package entity;
+package com.crm.crm.entity;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name = "user_answer")
 public class UserAnswer {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "answer_id")
     private Long answerId;//TODO: пробросить связи
     @Column(name = "question_id")

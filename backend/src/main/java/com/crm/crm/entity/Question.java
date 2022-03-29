@@ -1,19 +1,14 @@
-package entity;
+package com.crm.crm.entity;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name = "questions")
 public class Question {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "question_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long questionId;//TODO: пробросить связи
-    @Column(name = "question_number")
     private Long questionNumber;
-    @Column(name = "test_id")
     private Long testId;
-    @Column(name = "text")
     private String text;
 
     public Question() {
@@ -57,4 +52,5 @@ public class Question {
     public void setText(String text) {
         this.text = text;
     }
+
 }

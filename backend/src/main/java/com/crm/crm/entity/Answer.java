@@ -1,18 +1,17 @@
-package entity;
+package com.crm.crm.entity;
+
 import javax.persistence.*;
 
 @Entity
-@Table(name = "answers")
 public class Answer {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "answer_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long answerId;//TODO: пробросить связи
-    @Column(name = "question_id")
+
     private Long questionId;//TODO: пробросить связи
-    @Column(name = "text")
+
     private String text;
-    @Column(name = "isRight")
+
     private Boolean isRight;
 
     public Answer() {

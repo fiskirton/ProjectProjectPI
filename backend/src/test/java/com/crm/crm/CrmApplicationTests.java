@@ -1,10 +1,10 @@
-package project_se;
+package com.crm.crm;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ProjectSeApplicationTests {
+class CrmApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,15 +1,14 @@
-package entity;
+package com.crm.crm.entity;
+
 import com.sun.istack.NotNull;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
-
 public class Test {
-
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="test_id")
     @NotNull
     private Long testId; //TODO: пробросить связи
