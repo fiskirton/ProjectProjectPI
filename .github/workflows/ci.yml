@@ -56,7 +56,7 @@ jobs:
         with:
           context: ./frontend
           push: true
-          tags: projectpi/frontend:latest
+          tags: fiskirton/projectpi-frontend:latest
 
 
 
