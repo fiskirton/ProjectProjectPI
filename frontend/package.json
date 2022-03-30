@@ -9,6 +9,7 @@
     "@types/node": "^17.0.21",
     "@types/react": "^17.0.41",
     "@types/react-dom": "^17.0.14",
+    "axios": "^0.26.1",
     "react": "^17.0.2",
     "react-alert": "^7.0.3",
     "react-alert-template-basic": "^1.0.2",
@@ -24,7 +25,6 @@
     "test": "jest -i --forceExit",
     "eject": "react-scripts eject"
   },
-  
   "eslintConfig": {
     "extends": [
       "react-app",

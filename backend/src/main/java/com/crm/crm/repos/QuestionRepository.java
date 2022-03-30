@@ -12,7 +12,7 @@ import java.util.Optional;
 public interface QuestionRepository extends JpaRepository<Question, Long> {
     @Query(value = "SELECT ua.user_nick_name as \"userNickName\", SUM(a.is_right) * 10 as \"score\" FROM user_answer ua \n" +
             "INNER JOIN answer a on a.answer_id = ua.answer_id\n" +
-            "INNER JOIN question q on a.question_id = q.question_id\n" +
+            "INNER JOIN question q on ua.question_id = q.question_id\n" +
             "WHERE q.test_id = :test_id\n" +
             "GROUP BY ua.user_nick_name\n" +
             "ORDER BY score DESC;\n",nativeQuery = true)

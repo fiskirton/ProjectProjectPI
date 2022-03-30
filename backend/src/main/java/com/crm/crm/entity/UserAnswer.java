@@ -6,10 +6,15 @@ import javax.persistence.*;
 public class UserAnswer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="user_answer_id")
+    private Long userAnswerId;
+
     @Column(name = "answer_id")
-    private Long answerId;//TODO: пробросить связи
+    private Long answerId;
+
     @Column(name = "question_id")
-    private Long question_id;//TODO: пробросить связи
+    private Long question_id;
+
     @Column(name = "userNickName")
     private String userNickName;
 
